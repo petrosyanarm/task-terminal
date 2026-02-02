@@ -5,7 +5,7 @@ function Prices() {
     return (
         <div className="px-4 lg:px-15 py-5 flex flex-col md:flex-row justify-between">
             {PRICES_BOXES.map((item) => (
-                <div key={item.id} className="px-10 lg:px-15 xl:px-32.5 py-6 bg-black rounded-[28px] border border-[rgba(248,249,250,1)] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
+                <div key={item.id} className="px-10 lg:px-15 xl:px-32.5 py-6 bg-white rounded-[28px] border border-[rgba(248,249,250,1)] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
                     <div className="flex flex-col items-center">
                         <span className="font-semibold text-[48px] text-[rgba(54,51,82,1)] font-montserrat leading-[150%]">{item.price}</span>
                         <span className="text-[rgba(102,100,120,1)] font-montserrat font-medium text-[18px] leading-[150%]">{item.title}</span>

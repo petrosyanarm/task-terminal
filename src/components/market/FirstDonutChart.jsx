@@ -12,14 +12,14 @@ function FirstDonutChart() {
     currentAngle += angle;
     return {
       ...item,
-      startAngle: startAngle - 160,
-      endAngle: startAngle + angle - 160,
+      startAngle: startAngle - 165,
+      endAngle: startAngle + angle - 165,
     };
   })
   return (
-    <div className="bg-black px-8 xl:px-20.5 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
+    <div className="bg-white px-1 xl:px-20.5 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
       <div className="flex flex-col gap-10">
-        <div className="w-full h-60 flex items-center justify-center">
+        <div className="w-full h-63 flex items-center justify-center">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               {segments.map((segment) => (
@@ -38,7 +38,7 @@ function FirstDonutChart() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 px-3 lg:px-6 xl:grid-cols-2 xl:px-0 gap-x-2 gap-y-10">
           {FIRST_DONUT_DATA.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">
@@ -46,7 +46,7 @@ function FirstDonutChart() {
                   <div style={{ background: item.fill }} className="w-4 h-4 rounded-full mt-1" ></div>
                 </div>
                 <div className="flex flex-col gap-2.5">
-                  <span className="font-semibold font-montserrat text-[rgba(54,51,82,1)] text-[12px] lg:text-base">{item.name}</span>
+                  <span className="font-semibold font-montserrat text-[rgba(54,51,82,1)] text-[10px] lg:text-base">{item.name}</span>
                   <span className="font-medium font-montserrat text-[10px] lg:text-[14px] text-[rgba(54,51,82,1)]">{item.value}%</span>
                 </div>
               </div>

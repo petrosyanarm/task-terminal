@@ -26,9 +26,8 @@ function Header() {
                     <Button className="text-[rgba(54,51,82,1)] font-montserrat text-[12px] xl:text-base font-medium leading-[100%] px-2 py-2">Register</Button>
                     <Button className="rounded-[20px] text-red bg-[rgba(254,242,243,1)] px-6 py-2  font-montserrat text-[12px] xl:text-base font-medium leading-[100%]">Login</Button>
                 </div>
-
             </div>
-            <Button onClick={handleMenu}><CiMenuBurger className="flex lg:hidden cursor-pointer" /></Button>
+            <Button onClick={handleMenu} className="flex lg:hidden cursor-pointer" ><CiMenuBurger /></Button>
             <ul className={twMerge(show ? "opacity-100 scale-100 translate-y-0 visible" : "opacity-0 scale-95 -translate-y-4 invisible", "w-[95%] py-2 flex flex-col gap-3 rounded-2xl bg-white items-center justify-center shadow-[0_10px_30px_rgba(238,238,238,0.502)]  absolute left-1/2 -translate-x-1/2 top-18 transition-all duration-300 ease-out")}>
                 {LINKS.map((item) => (
                     <Link to={item.href} key={item.id} className="text-[12px] font-medium font-montserrat leading-[100%]"><li>{item.title}</li></Link>

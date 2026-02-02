@@ -8,10 +8,11 @@ import {
   CartesianGrid,
 } from "recharts";
 import { SALES_DATA } from '@/utils/constants/Boxes';
+import IconCheck from "@/assets/images/check_icon.svg"
 
 function FirstChart() {
   return (
-    <div className="bg-black px-6 py-6 shadow-[0_10px_30px_rgba(238,238,238,0.502)] flex flex-col rounded-3xl">
+    <div className="bg-white px-6 py-6 shadow-[0_10px_30px_rgba(238,238,238,0.502)] flex flex-col rounded-3xl">
       <div className="w-full xl:w-200">
         <div className="flex gap-5 lg:gap-47">
           <h2 className="text-[14px] lg:text-[18px] text-blue-gray font-montserrat font-semibold">2023 VS 2024</h2>
@@ -66,7 +67,9 @@ function FirstChart() {
         </div>
         <div className="flex justify-center gap-8 mt-6 text-sm">
           <div className="flex items-center gap-2">
-            <div className="w-4 h-4 rounded-full bg-red" ></div>
+            <div className="w-4 h-4 rounded-full justify-center items-center bg-red" >
+              <img alt="check_icon" src={IconCheck} />
+            </div>
             <span className="font-montserrat font-medium text-[12px] lg:text-[16px] text-blue-gray leading-[100%]">Sales Value</span>
           </div>
           <div className="flex items-center gap-2">

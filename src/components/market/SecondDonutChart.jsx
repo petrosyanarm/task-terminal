@@ -17,7 +17,7 @@ function SecondDonutChart() {
     };
   })
   return (
-    <div className="bg-black px-5 xl:px-11.5 py-10 flex flex-col shadow-[0_10px_30px_rgba(238,238,238,0.502)] rounded-[28px]">
+    <div className="bg-white px-1 xl:px-11.5 py-10 flex flex-col shadow-[0_10px_30px_rgba(238,238,238,0.502)] rounded-[28px]">
       <div className="flex flex-col gap-10">
         <div className="w-full h-75 flex items-center justify-center">
           <ResponsiveContainer width="100%" height="100%">
@@ -38,7 +38,7 @@ function SecondDonutChart() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="flex gap-10">
+        <div className="flex px-3 lg:px-6 xl:px-0 gap-10">
           {SECOND_DONUT_DATA.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">

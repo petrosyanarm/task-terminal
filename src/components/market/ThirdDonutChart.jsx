@@ -12,12 +12,12 @@ function ThirdDonutChart() {
     currentAngle += angle;
     return {
       ...item,
-      startAngle: startAngle - 20,
-      endAngle: startAngle + angle - 20,
+      startAngle: startAngle - 55,
+      endAngle: startAngle + angle - 55,
     };
   })
   return (
-    <div className="bg-black px-6.25 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
+    <div className="bg-white px-1 lg:px-6.25 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
       <div className="flex flex-col gap-10">
         <div className="w-full h-80 flex items-center justify-center">
           <ResponsiveContainer width="100%" height="100%">
@@ -38,7 +38,7 @@ function ThirdDonutChart() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="max-h-50 px-2 lg:px-6 flex flex-wrap gap-7">
+        <div className="max-h-30 px-3 lg:px-6 flex flex-wrap gap-7">
           {THIRD_DONUT_DATA.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">
