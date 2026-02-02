@@ -38,7 +38,7 @@ function ThirdDonutChart() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="max-h-30 px-3 lg:px-6 flex flex-wrap gap-7">
+        <div className="max-h-35 px-3 gap-5 lg:px-6 flex flex-wrap lg:gap-7">
           {THIRD_DONUT_DATA.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">

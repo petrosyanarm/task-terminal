@@ -13,7 +13,7 @@ import FooterMessageIcon from "@/assets/images/message.svg";
 export const LINKS = [
   { id: 1, href: "/", title: "Home" },
   { id: 2, href: "/", title: "Property Listing" },
-  { id: 3, href: "/", title: "Dubai property market insights" },
+  { id: 3, href: "/", title: "Dubai property market insights"},
   { id: 4, href: "/", title: "News" },
   { id: 5, href: "/", title: "About Us" },
 ];
@@ -255,3 +255,19 @@ export const FOOTER_BOXES = [
     percent: "+19.4% in 2Y",
   },
 ];
+
+// export function Chart=()=>{
+//     const total = FIRST_DONUT_DATA.reduce((sum, item) => sum + item.value, 0);
+//   let currentAngle = 0;
+
+//   const segments = FIRST_DONUT_DATA.map((item) => {
+//     const startAngle = currentAngle;
+//     const angle = (item.value / total) * 360;
+//     currentAngle += angle;
+//     return {
+//       ...item,
+//       startAngle: startAngle - 165,
+//       endAngle: startAngle + angle - 165,
+//     };
+//   })
+// }

@@ -10,7 +10,7 @@ function Prices() {
                         <span className="font-semibold text-[48px] text-[rgba(54,51,82,1)] font-montserrat leading-[150%]">{item.price}</span>
                         <span className="text-[rgba(102,100,120,1)] font-montserrat font-medium text-[18px] leading-[150%]">{item.title}</span>
                         <div className="flex items-center pt-4.25 gap-2">
-                            <Button className="px-2.5 py-1 flex gap-2 bg-[rgba(85,212,167,0.1)] text-[rgba(85,212,167,0.1)] rounded-[20px] text-[14px] font-medium font-montserrat"><img alt="Icon_Vector" src={IconVector} />{item.percent}</Button>
+                            <Button className="px-2.5 py-1 flex gap-2 bg-[rgba(85,212,167,0.1)] text-[rgba(60,178,136,1)] rounded-[20px] text-[14px] font-medium font-montserrat"><img alt="Icon_Vector" src={IconVector} />{item.percent}</Button>
                             <span className="text-[14px] text-[rgba(54,51,82,1)] font-montserrat font-medium leading-[150%]">YoY Change</span>
                         </div>
                     </div>
