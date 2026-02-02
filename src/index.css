@@ -3,6 +3,7 @@
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
   --color-gray: rgba(235,235,235,1);
+  --color-blue-gray:rgba(21,29,72,1);
   --color-red :rgba(209,45,52,1);
   --color-black:rgba(46,44,65,1);
   --color-green:rgba(40,153,145,1);

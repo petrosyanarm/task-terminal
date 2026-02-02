@@ -4,16 +4,18 @@ import Prices from "@/components/market/Prices"
 import Charts from "@/components/market/Charts"
 import Footer from "@/components/layout/footer/Footer"
 
-function DefaulLayout(){
-    return(
-        <div className="bg-white">
-            <div className="w-full max-w-360 mx-auto h-screen">
-                <Header/>
-                <Insights/>
-                <Prices/>
-                <Charts/>
-                <Footer/>
+function DefaulLayout() {
+    return (
+        <div className="h-screen">
+            <div className="bg-white">
+                <div className="w-full max-w-360 mx-auto">
+                    <Header />
+                    <Insights />
+                    <Prices />
+                    <Charts />
+                </div>
             </div>
+            <Footer />
         </div>
     )
 }
