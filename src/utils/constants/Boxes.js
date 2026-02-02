@@ -54,11 +54,12 @@ export const SALES_DATA = [
   {id:12, month: "Dec", y2023: 35, y2024: 45 },
 ];
 
-export const PIE_DATA = [
-  {id:1, name: "Villas", value: 20, fill: "var(--color-red)" },
-  {id:2, name: "Apartments", value: 55, fill: "var(--color-green)" },
-  {id:3, name: "Plot", value: 15, fill: "var(--color-yellow)" },
-  {id:4, name: "Commercial", value: 10, fill: "var(--color-blue)" },
+
+export const  FIRST_DONUT_DATA = [
+  {id:1,name: "Villas", value: 20, fill:  "var(--color-red)" , innerRadius: 45,outerRadius: 85,},
+  {id:2, name: "Apartments",value: 55,fill: "var(--color-green)",innerRadius: 45,outerRadius: 100,}, 
+  {id:3, name: "Commercial",value: 10,fill:  "var(--color-blue)",innerRadius: 50,outerRadius: 65,},
+  {id:4,name: "Plot", value: 15,fill:  "var(--color-yellow)", innerRadius: 50, outerRadius: 77,},
 ];
 
 export const VUE_DATA = [
