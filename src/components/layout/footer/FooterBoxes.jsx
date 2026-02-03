@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge"
 function FooterBoxes() {
     const [activeId, setActiveId] = useState(5);
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 [@media(min-width:1440px)]:grid-cols-3 gap-x-6 gap-y-3">
             {FOOTER_BOXES.map((item) => (
                 <div onClick={() => setActiveId(item.id)} key={item.id} className={twMerge(activeId === item.id ? "bg-[rgba(72,72,78,1)]" : "bg-transparent", "w-full justify-between px-2 py-3 rounded-[38px] flex gap-2 items-center cursor-pointer")}>
                     <div className="flex gap-3">

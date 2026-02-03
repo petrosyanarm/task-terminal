@@ -6,7 +6,7 @@ import charts from "@/utils/constants/ChartData"
 function ThirdDonutChart() {
   const segments = charts(THIRD_DONUT_DATA, -55);
   return (
-    <div className="bg-white px-1 lg:px-6.25 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
+    <div className="bg-white px-1 xl:px-0 [@media(min-width:1440px)]:px-6.25 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
       <div className="flex flex-col gap-10">
         <div className="w-full h-80 flex items-center justify-center">
           <ResponsiveContainer width="100%" height="100%">
@@ -27,7 +27,7 @@ function ThirdDonutChart() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="max-h-45 px-3 gap-5 lg:px-6 flex flex-wrap lg:gap-7">
+        <div className="px-1 grid grid-cols-3 gap-y-3  [@media(min-width:1440px)]:grid-cols-4 gap-x-2 [@media(min-width:1440px)]:gap-y-5">
           {THIRD_DONUT_STAT_DATA.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">

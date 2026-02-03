@@ -20,7 +20,7 @@ function Header() {
             </div>
             <div className="hidden lg:flex items-center lg:gap-15 xl:gap-8">
                 <div>
-                    <ul className="flex gap-2 xl:gap-10 px-1 py-4 xl:px-[54.5px] xl:py-5 border rounded-[50px] border-gray">
+                    <ul className="flex gap-2 xl:gap-10 px-1 py-4 xl:py-5 xl:px-1.5 [@media(min-width:1440px)]:px-[54.5px] [@media(min-width:1440px)]:py-5 border rounded-[50px] border-gray">
                         {LINKS.map((item) => (
                     <li key={item.id} className="relative">
                     <Link onClick={()=>setActive(item.id)} to={item.href}
