@@ -13,21 +13,21 @@ function Header() {
         setShow(!show)
     }
     return (
-        <div className="px-5 py-4 lg:px-15 xl:py-4 flex items-center justify-between">
+        <div className="px-5 py-4 lg:px-15 xl:py-4 flex gap-2 items-center justify-between">
             <div> <img alt="Header_Logo" src={Header_logo} className="object-cover" /></div>
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex items-center lg:gap-15 xl:gap-8">
                 <div>
-                    <ul className="flex gap-2 xl:gap-10 px-4 xl:px-[54.5px] py-6 border rounded-[50px] border-gray">
+                    <ul className="flex gap-2 xl:gap-10 px-1 py-4 xl:px-[54.5px] xl:py-5 border rounded-[50px] border-gray">
                         {LINKS.map((item) => (
                     <li key={item.id} className="relative">
                     <Link onClick={()=>setActive(item.title)} to={item.href}
                     className={twMerge("relative text-[12px] xl:text-base font-medium font-montserrat leading-[100%] pb-4", active===item.title
-                    ? "text-red after:absolute after:left-0 after:-bottom-2.5 after:h-0.5 after:w-full after:bg-red after:rounded-full"
+                    ? "text-red after:absolute after:left-0 lg:after:-bottom-1 xl:after:-bottom-2 after:h-0.5 after:w-full after:bg-red after:rounded-full"
                     : "text-[rgba(54,51,82,1)]")}>{item.title}</Link>
                     </li> ))}
                     </ul>
                 </div>
-                <div className="flex gap-5 border py-4 pl-6 pr-4 border-gray rounded-[50px]">
+                <div className="flex gap-5 border py-3.5 xl:py-4 pl-6 pr-4 border-gray rounded-[50px]">
                     <Button className="text-[rgba(54,51,82,1)] font-montserrat text-[12px] xl:text-base font-medium leading-[100%] px-2 py-2">Register</Button>
                     <Button className="rounded-[20px] text-red bg-[rgba(254,242,243,1)] px-6 py-2  font-montserrat text-[12px] xl:text-base font-medium leading-[100%]">Login</Button>
                 </div>

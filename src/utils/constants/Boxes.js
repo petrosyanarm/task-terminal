@@ -69,7 +69,7 @@ export const FIRST_DONUT_DATA = [
     value: 55,
     fill: "var(--color-green)",
     innerRadius: 75,
-    outerRadius: 124,
+    outerRadius: 126,
   },
   {
     id: 3,

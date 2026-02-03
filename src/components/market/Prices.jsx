@@ -3,7 +3,7 @@ import IconVector from "@/assets/images/Vector.svg"
 import Button from "@/components/ui/Button";
 function Prices() {
     return (
-        <div className="px-4 lg:px-15 py-5 flex flex-col md:flex-row justify-between">
+        <div className="px-4 lg:px-15 py-5 flex flex-col gap-2 lg:gap-0 md:flex-row justify-between">
             {PRICES_BOXES.map((item) => (
                 <div key={item.id} className="px-10 lg:px-15 xl:px-32.5 py-6 bg-white rounded-[28px] border border-[rgba(248,249,250,1)] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
                     <div className="flex flex-col items-center">
