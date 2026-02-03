@@ -1,6 +1,6 @@
 import { FOOTER_BOXES } from "@/utils/constants/Boxes"
 import { useState } from "react";
-import FooterVector from "@/assets/images/FooterVector.svg?react"
+import FooterVector from "@/assets/images/footerVector.svg?react"
 import Button from "@/components/ui/Button";
 import { twMerge } from "tailwind-merge"
 
