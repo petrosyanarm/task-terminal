@@ -1,21 +1,10 @@
-import { SECOND_DONUT_DATA } from "@/utils/constants/Boxes";
+import { SECOND_DONUT_DATA } from "@/utils/constants/ChartData";
+import charts from "@/utils/constants/ChartData"
 import { PieChart, Pie, ResponsiveContainer, Legend } from "recharts";
 
 
 function SecondDonutChart() {
-  const total = SECOND_DONUT_DATA.reduce((sum, item) => sum + item.value, 0);
-  let currentAngle = 0;
-
-  const segments = SECOND_DONUT_DATA.map((item) => {
-    const startAngle = currentAngle;
-    const angle = (item.value / total) * 360;
-    currentAngle += angle;
-    return {
-      ...item,
-      startAngle: startAngle - 160,
-      endAngle: startAngle + angle - 160,
-    };
-  })
+const segments = charts(SECOND_DONUT_DATA, -160);
   return (
     <div className="bg-white px-1 xl:px-11.5 py-10 flex flex-col shadow-[0_10px_30px_rgba(238,238,238,0.502)] rounded-[28px]">
       <div className="flex flex-col gap-10">
@@ -39,7 +28,7 @@ function SecondDonutChart() {
           </ResponsiveContainer>
         </div>
         <div className="flex px-3 lg:px-6 xl:px-0 gap-10">
-          {SECOND_DONUT_DATA.map((item) => (
+          {segments.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">
                 <div>

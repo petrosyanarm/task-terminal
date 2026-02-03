@@ -1,6 +1,6 @@
 import { FOOTER_BOXES } from "@/utils/constants/Boxes"
 import { useState } from "react";
-import IconVector from "@/assets/images/Vector.png"
+import FooterVector from "@/assets/images/FooterVector.svg?react"
 import Button from "@/components/ui/Button";
 import { twMerge } from "tailwind-merge"
 
@@ -19,7 +19,7 @@ function FooterBoxes() {
                             <span className="text-[10px] lg:text-[12px] font-montserrat leading-[100%] font-medium text-[rgba(254,254,255,1)]">{item.name}</span>
                         </div>
                     </div>
-                    <Button className="px-2 py-1 flex justify-center items-center gap-2 bg-[rgba(85,212,167,0.1)] text-[rgba(35,148,107,1)] rounded-[20px] text-[10px] lg:text-[14px] font-medium font-montserrat"><img className="w-2 h-1" alt="Icon_Vector" src={IconVector} />{item.percent}</Button>
+                    <Button variant={'secondary'} className="px-2 py-1"><FooterVector/>{item.percent}</Button>
                 </div>
             ))}
         </div>

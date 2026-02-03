@@ -12,10 +12,6 @@ const ReactRoutes = () => {
                     path: "/",
                     element: <HomePage />,
                 },
-                {
-                    path: "/team",
-                    element: <div >team</div>,
-                },
             ],
         },
     ]);

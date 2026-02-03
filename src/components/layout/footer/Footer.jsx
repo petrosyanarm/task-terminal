@@ -1,6 +1,6 @@
-import Footer_logo from "@/assets/images/footer_logo.svg";
+import FooterLogo from "@/assets/images/footer_logo.svg?react";
 import FooterBoxes from "@/components/layout/footer/FooterBoxes";
-import Footer_c from "@/assets/images/footer_c.svg";
+import FooterCap from "@/assets/images/footer_c.svg?react";
 function Footer() {
     return (
         <div className="bg-[rgba(57,57,61,1)] w-full">
@@ -11,9 +11,9 @@ function Footer() {
                     </div>
                     <FooterBoxes />
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 pt-8 sm:pt-12 lg:pt-15 justify-between items-start sm:items-center">
-                        <img alt="footer_logo" src={Footer_logo} />
+                        <FooterLogo/>
                         <div className="flex gap-2">
-                            <img alt="footer_icon" src={Footer_c} />
+                            <FooterCap/>
                             <span className="font-normal font-montserrat text-[14px] text-[rgba(254,254,255,1)] leading-[100%]">2023 Broker Terminal, Inc.</span>
                         </div>
                     </div>

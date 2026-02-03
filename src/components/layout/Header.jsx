@@ -1,27 +1,30 @@
-import Header_logo from "@/assets/images/header_logo.svg";
-import { LINKS } from "@/utils/constants/Boxes";
+import { LINKS } from "@/utils/constants/NavLinks";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import Button from "@/components/ui/Button";
 import { twMerge } from "tailwind-merge"
+import HeaderLogo from "@/assets/images/header_logo.svg?react";
+
 
 function Header() {
     const [show, setShow] = useState(false)
-    const [active,setActive]=useState('Dubai property market insights')
+    const [active,setActive]=useState(3)
     const handleMenu = () => {
         setShow(!show)
     }
     return (
         <div className="px-5 py-4 lg:px-15 xl:py-4 flex gap-2 items-center justify-between">
-            <div> <img alt="Header_Logo" src={Header_logo} className="object-cover" /></div>
+            <div> 
+                <HeaderLogo className="object-contain"/>
+            </div>
             <div className="hidden lg:flex items-center lg:gap-15 xl:gap-8">
                 <div>
                     <ul className="flex gap-2 xl:gap-10 px-1 py-4 xl:px-[54.5px] xl:py-5 border rounded-[50px] border-gray">
                         {LINKS.map((item) => (
                     <li key={item.id} className="relative">
-                    <Link onClick={()=>setActive(item.title)} to={item.href}
-                    className={twMerge("relative text-[12px] xl:text-base font-medium font-montserrat leading-[100%] pb-4", active===item.title
+                    <Link onClick={()=>setActive(item.id)} to={item.href}
+                    className={twMerge("relative text-[12px] xl:text-base font-medium font-montserrat leading-[100%] pb-4", active===item.id
                     ? "text-red after:absolute after:left-0 lg:after:-bottom-1 xl:after:-bottom-2 after:h-0.5 after:w-full after:bg-red after:rounded-full"
                     : "text-[rgba(54,51,82,1)]")}>{item.title}</Link>
                     </li> ))}

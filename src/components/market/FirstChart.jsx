@@ -1,14 +1,6 @@
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-  CartesianGrid,
-} from "recharts";
-import { SALES_DATA } from '@/utils/constants/Boxes';
-import IconCheck from "@/assets/images/check_icon.svg"
+import {AreaChart, Area,XAxis,YAxis,Tooltip, ResponsiveContainer,CartesianGrid} from "recharts";
+import { SALES_DATA } from '@/utils/constants/ChartData';
+import IconCheck from "@/assets/images/check_icon.svg?react"
 
 function FirstChart() {
   return (
@@ -68,7 +60,7 @@ function FirstChart() {
         <div className="flex justify-center gap-8 mt-6 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full justify-center items-center bg-red" >
-              <img alt="check_icon" src={IconCheck} />
+              <IconCheck/>
             </div>
             <span className="font-montserrat font-medium text-[12px] lg:text-[16px] text-blue-gray leading-[100%]">Sales Value</span>
           </div>

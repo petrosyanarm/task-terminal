@@ -1,21 +1,10 @@
-import { THIRD_DONUT_DATA } from "@/utils/constants/Boxes";
+import { THIRD_DONUT_DATA,THIRD_DONUT_STAT_DATA } from "@/utils/constants/ChartData";
 import { PieChart, Pie, ResponsiveContainer, Legend } from "recharts";
+import charts from "@/utils/constants/ChartData"
 
 
 function ThirdDonutChart() {
-  const total = THIRD_DONUT_DATA.reduce((sum, item) => sum + item.value, 0);
-  let currentAngle = 0;
-
-  const segments = THIRD_DONUT_DATA.map((item) => {
-    const startAngle = currentAngle;
-    const angle = (item.value / total) * 360;
-    currentAngle += angle;
-    return {
-      ...item,
-      startAngle: startAngle - 55,
-      endAngle: startAngle + angle - 55,
-    };
-  })
+  const segments = charts(THIRD_DONUT_DATA, -55);
   return (
     <div className="bg-white px-1 lg:px-6.25 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
       <div className="flex flex-col gap-10">
@@ -38,8 +27,8 @@ function ThirdDonutChart() {
             </PieChart>
           </ResponsiveContainer>
         </div>
-        <div className="max-h-35 px-3 gap-5 lg:px-6 flex flex-wrap lg:gap-7">
-          {THIRD_DONUT_DATA.map((item) => (
+        <div className="max-h-45 px-3 gap-5 lg:px-6 flex flex-wrap lg:gap-7">
+          {THIRD_DONUT_STAT_DATA.map((item) => (
             <div key={item.id} className="flex">
               <div className="flex gap-2.5">
                 <div>

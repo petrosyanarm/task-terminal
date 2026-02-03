@@ -1,13 +1,6 @@
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  ResponsiveContainer,
-} from "recharts";
-import { BAR_DATA } from '@/utils/constants/Boxes';
-import IconCheck from "@/assets/images/check_icon.svg"
+import {BarChart,Bar, XAxis,YAxis,CartesianGrid,ResponsiveContainer} from "recharts";
+import { BAR_DATA } from '@/utils/constants/ChartData';
+import IconCheck from "@/assets/images/check_icon.svg?react"
 
 function ThirdChart() {
   return (
@@ -55,7 +48,7 @@ function ThirdChart() {
         <div className="flex justify-center gap-8 mt-6 pt-2  text-sm">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-red" >
-              <img alt="check_icon" src={IconCheck}/>
+              <IconCheck/>
             </div>
             <span className="font-montserrat font-medium text-[12px] lg:text-[16px] text-blue-gray leading-[100%]">Sales Value</span>
           </div>
