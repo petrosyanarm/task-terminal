@@ -20,19 +20,19 @@ function Header() {
             </div>
             <div className="hidden lg:flex items-center lg:gap-15 xl:gap-8">
                 <div>
-                    <ul className="flex gap-2 xl:gap-10 px-1 py-4 xl:py-5 xl:px-1.5 [@media(min-width:1440px)]:px-[54.5px] [@media(min-width:1440px)]:py-5 border rounded-[50px] border-gray">
+                    <ul className="flex gap-2 xl:gap-10 px-1 py-4 xl:py-5 xl:px-1.5 2xl:px-[54.5px] 2xl:py-5 border rounded-[50px] border-gray">
                         {LINKS.map((item) => (
                     <li key={item.id} className="relative">
                     <Link onClick={()=>setActive(item.id)} to={item.href}
-                    className={twMerge("relative text-[12px] xl:text-base font-medium font-montserrat leading-[100%] pb-4", active===item.id
+                    className={twMerge("relative text-[12px] xl:text-[14px] 2xl:text-base font-medium font-montserrat leading-[100%] pb-4", active===item.id
                     ? "text-red after:absolute after:left-0 lg:after:-bottom-1 xl:after:-bottom-2 after:h-0.5 after:w-full after:bg-red after:rounded-full"
                     : "text-[rgba(54,51,82,1)]")}>{item.title}</Link>
                     </li> ))}
                     </ul>
                 </div>
                 <div className="flex gap-5 border py-3.5 xl:py-4 pl-6 pr-4 border-gray rounded-[50px]">
-                    <Button className="text-[rgba(54,51,82,1)] font-montserrat text-[12px] xl:text-base font-medium leading-[100%] px-2 py-2">Register</Button>
-                    <Button className="rounded-[20px] text-red bg-[rgba(254,242,243,1)] px-6 py-2  font-montserrat text-[12px] xl:text-base font-medium leading-[100%]">Login</Button>
+                    <Button className="text-[rgba(54,51,82,1)] font-montserrat text-[12px] xl:text-[14px] 2xl:text-base font-medium leading-[100%] px-2 py-2">Register</Button>
+                    <Button className="rounded-[20px] text-red bg-[rgba(254,242,243,1)] px-6 py-2  font-montserrat text-[12px] xl:text-[14px] 2xl:text-base font-medium leading-[100%]">Login</Button>
                 </div>
             </div>
             <Button onClick={handleMenu} className="flex lg:hidden cursor-pointer"><CiMenuBurger /></Button>

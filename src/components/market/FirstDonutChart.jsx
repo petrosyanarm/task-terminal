@@ -6,7 +6,7 @@ function FirstDonutChart() {
     const segments = charts(FIRST_DONUT_DATA, -165);
 
   return (
-    <div className="bg-white px-1 xl:px-4 [@media(min-width:1440px)]:px-16.5 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
+    <div className="bg-white px-1 xl:px-4 2xl:px-16.5 py-10 flex flex-col rounded-[28px] shadow-[0_10px_30px_rgba(238,238,238,0.502)]">
       <div className="flex flex-col gap-10">
         <div className="w-full h-63 flex items-center justify-center">
           <ResponsiveContainer width="100%" height="100%">

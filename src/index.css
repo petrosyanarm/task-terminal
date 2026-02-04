@@ -2,11 +2,16 @@
 
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
-  --color-gray: rgba(235,235,235,1);
-  --color-blue-gray:rgba(21,29,72,1);
-  --color-red :rgba(209,45,52,1);
-  --color-black:rgba(46,44,65,1);
-  --color-green:rgba(40,153,145,1);
-  --color-yellow:rgba(255,186,85,1);
-  --color-blue:rgba(59,64,109,1)
+  --color-gray: rgba(235, 235, 235, 1);
+  --color-blue-gray: rgba(21, 29, 72, 1);
+  --color-red: rgba(209, 45, 52, 1);
+  --color-black: rgba(46, 44, 65, 1);
+  --color-green: rgba(40, 153, 145, 1);
+  --color-yellow: rgba(255, 186, 85, 1);
+  --color-blue: rgba(59, 64, 109, 1);
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
 }

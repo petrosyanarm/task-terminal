@@ -7,7 +7,7 @@ import ThirdChart from '@/components/market/ThirdChart';
 
 function Charts() {
     return (
-        <div className="flex flex-col xl:flex-row px-4 lg:px-15 pb-20 gap-5">
+        <div className="flex flex-col xl:flex-row justify-between px-4 lg:px-15 pb-20">
             <div className="gap-5 flex flex-col ">
                 <FirstChart />
                 <SecondChart />

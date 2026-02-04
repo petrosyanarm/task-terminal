@@ -6,7 +6,7 @@ import { PieChart, Pie, ResponsiveContainer, Legend } from "recharts";
 function SecondDonutChart() {
 const segments = charts(SECOND_DONUT_DATA, -160);
   return (
-    <div className="bg-white px-1 xl:px-5 [@media(min-width:1440px)]:px-11.5 py-10 flex flex-col shadow-[0_10px_30px_rgba(238,238,238,0.502)] rounded-[28px]">
+    <div className="bg-white px-1 xl:px-5 2xl:px-11.5 py-10 flex flex-col shadow-[0_10px_30px_rgba(238,238,238,0.502)] rounded-[28px]">
       <div className="flex flex-col gap-10">
         <div className="w-full h-75 flex items-center justify-center">
           <ResponsiveContainer width="100%" height="100%">
